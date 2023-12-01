@@ -7,12 +7,15 @@
 size = Vector2(129, 132)
 
 [node name="Player" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+slide_on_ceiling = false
+floor_stop_on_slope = false
+floor_block_on_wall = false
+platform_on_leave = 2
 script = ExtResource("1_q5aob")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_rw4td")
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1.5, -1)
